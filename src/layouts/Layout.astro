@@ -1,4 +1,10 @@
 ---
+import "@fontsource/fira-sans";
+// Supports weights 300-700
+import "@fontsource-variable/space-grotesk";
+import Navbar from "../components/layout/Navbar.astro";
+import Footer from "../components/layout/Footer.astro";
+
 interface Props {
 	title: string;
 }
@@ -16,7 +22,9 @@ const { title } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body>
+	<body class="bg-blue-800 mx-6 text-white">
+		<Navbar />
 		<slot />
+		<Footer />
 	</body>
 </html>
