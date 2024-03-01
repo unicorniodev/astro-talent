@@ -1,0 +1,15 @@
+---
+import { Icon } from "astro-icon/components";
+import type { Links } from "../../data/layout/links";
+import { linksData } from "../../data/layout/links";
+import Link from "../../components/layout/Link.astro";
+---
+
+<footer>
+  <div class="flex flex-col gap-5 border-y-[1px] border-blue-400 py-5">
+    <Icon name="logo" width={116} height={24} />
+    <nav class="flex flex-col gap-3">
+      {linksData.map((link: Links) => <Link {...link} />)}
+    </nav>
+  </div>
+</footer>

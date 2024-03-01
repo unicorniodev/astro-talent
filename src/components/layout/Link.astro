@@ -1,0 +1,8 @@
+---
+import type { Links } from "../../data/layout/links";
+const { title, path } = Astro.props as Links;
+---
+
+<a href={path} class="hover:underline">
+  {title}
+</a>
