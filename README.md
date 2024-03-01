@@ -26,6 +26,10 @@ Algunos requisitos técnicos para el desarrollo del desafío:
 
 <br/>
 
+![Imagen de la pantalla principal del proyecto](/src/assets/images/githubRepo/Home-AstroTalent-Desktop.jpg)
+
+<br/>
+
 ## Desafíos técnicos interesantes:
 
 Como el objetivo de estos desafíos es tratar de aprender cosas nuevas, les dejo algunas ideas de problemas técnicos que se pueden encarar dentro de este proyecto.
@@ -50,7 +54,7 @@ A darle átomos! Elige tu stack de herramientas preferidas y a codear.
 
 ## Diseño:
 
-El diseño estará en proceso de desarrollo por un par de semanas. Mientras trabajo con eso, dejaré disponible el link de Figma para que puedan ver lo que iremos desarrollando en los streams. También pueden ir codeando las secciones que hacemos en los directos, si quieren ir practicando a la par.
+El diseño estará en proceso de desarrollo por un par de semanas. Mientras trabajo con eso, dejaré disponible [el link de Figma](https://www.figma.com/file/A1FpBCdpOktA1l8oGUDvLt/UNICORNIODEV---AstroTalen---WIP?type=design&node-id=0%3A1&mode=design&t=8LOP85MrLEJCwLOZ-1) para que puedan ver lo que iremos desarrollando en los streams. También pueden ir codeando las secciones que hacemos en los directos, si quieren ir practicando a la par.
 
 Una vez terminado el diseño, subiré un archivo de Figma al repositorio para que puedan importarlo directamente en sus cuentas de este editor de diseño. De esa forma podrán editar el archivo como lo necesiten y alterar cualquiera de sus elementos o atributos (colores, tipografías, etc.).
 
@@ -79,12 +83,16 @@ También tendremos secciones donde ustedes pueden participar mandando sus Pull R
 
 ## Streams
 
-💛 Primer directo sobre el proyecto —> 29/02/2024
+💛 **Primer directo sobre el proyecto —> 29/02/2024** 💛
 
 - Presentación
 - Configuración inicial del proyecto
 - Estructura de carpetas y rutas
 - Empezamos a codear los primeros componentes
+
+<br/>
+
+[![Mira el video](/src/assets/images/githubRepo/AstroTalen%20-%20Parte%201.png)](https://youtu.be/cm2rcwNx95M)
 
 <br/>
 
