@@ -6,10 +6,34 @@ import Link from "../../components/layout/Link.astro";
 ---
 
 <footer>
-  <div class="flex flex-col gap-5 border-y-[1px] border-blue-400 py-5">
+  <div
+    class="flex flex-col gap-5 border-y-[1px] border-blue-400 py-5 md:px-6 items-center"
+  >
     <Icon name="logo" width={116} height={24} />
-    <nav class="flex flex-col gap-3">
+    <nav class="flex flex-col justify-center gap-3 md:flex-row md:gap-6">
       {linksData.map((link: Links) => <Link {...link} />)}
     </nav>
+  </div>
+  <div
+    class="my-6 flex flex-col gap-2 items-center text-sm md:flex-col-reverse"
+  >
+    <p>2024 - AstroTalent</p>
+    <div class="">
+      <div class="flex gap-1 items-center justify-center">
+        <span>Hecho con </span>
+        <Icon name="heart" size={16} />
+        <span>y Astro</span>
+      </div>
+      <p>
+        por la comunidad de <span
+          ><a
+            href="https://unicornio.dev"
+            target="_blank"
+            title="Web Unicornio Dev"
+            class="hover:text-blue-200">unicornio.dev</a
+          ></span
+        >
+      </p>
+    </div>
   </div>
 </footer>

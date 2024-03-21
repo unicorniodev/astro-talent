@@ -3,8 +3,12 @@ import { Icon } from "astro-icon/components";
 ---
 
 <nav>
-  <div class="flex justify-between my-6">
-    <Icon name="logo" width={116} height={24} />
-    <Icon name="burger" width={28} height={28} />
+  <div class="flex justify-between items-center my-6">
+    <a href="/" class="cursor-pointer">
+      <Icon name="logo" width={116} height={24} />
+    </a>
+    <button class="p-2 rounded-md hover:bg-blue-600">
+      <Icon name="burger" width={28} height={28} />
+    </button>
   </div>
 </nav>
