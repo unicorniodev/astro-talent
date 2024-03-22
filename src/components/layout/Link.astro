@@ -3,6 +3,6 @@ import type { Links } from "../../data/layout/links";
 const { title, path } = Astro.props as Links;
 ---
 
-<a href={path} class="hover:underline">
+<a href={path} class="hover:underline hover:bg-blue-600 py-2 px-4 rounded-lg">
   {title}
 </a>

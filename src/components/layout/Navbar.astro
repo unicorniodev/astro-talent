@@ -7,8 +7,17 @@ import { Icon } from "astro-icon/components";
     <a href="/" class="cursor-pointer">
       <Icon name="logo" width={116} height={24} />
     </a>
-    <button class="p-2 rounded-md hover:bg-blue-600">
+    <button class="p-2 rounded-md hover:bg-blue-600" id="nav_button">
       <Icon name="burger" width={28} height={28} />
     </button>
   </div>
 </nav>
+
+<script>
+  import { isSideMenuOpen } from '../../store/store.ts';
+  const button = document.getElementById("nav_button");
+  const handleOpenSideMenu = () => {
+    isSideMenuOpen.set(true);
+  };
+  button?.addEventListener("click", handleOpenSideMenu);
+</script>
