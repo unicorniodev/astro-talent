@@ -1,0 +1,46 @@
+---
+import { Icon } from "astro-icon/components";
+import {linksData} from "../../data/layout/links";
+import Link from "./Link.astro";
+---
+
+<div class="bg-black w-screen h-full fixed top-0 right-0 opacity-70 backdrop-blur-md hidden" id="side_menu_bg"></div>
+<div class="bg-blue-800 fixed top-0 -right-[500px] h-screen p-6 z-10 transition-all w-[270px] md:w-[350px] lg:w-[450px]" id="side_menu">
+    <nav class="flex flex-col gap-3">
+        <button class="p-2 rounded-md hover:bg-blue-600 self-end" id="side_menu_cross">
+            <Icon name="cross" size={32}/>
+        </button>
+        {
+            linksData.map((link) => (
+                <Link {...link}/>
+            ))
+        }
+    </nav>
+</div>
+
+<script>
+    import { isSideMenuOpen } from '../../store/store.ts';
+    const sideMenu = document.getElementById("side_menu");
+    const sideMenuBackground = document.getElementById("side_menu_bg");
+    const sideMenuCross = document.getElementById("side_menu_cross");
+
+    const handleCloseSideMenu = () => {
+        isSideMenuOpen.set(false);
+    }
+
+// Escucha los cambios en el store y muestra/oculta el diálogo en consecuencia
+    isSideMenuOpen.subscribe(open => {
+        if (open) {
+            sideMenuBackground.classList.remove("hidden");
+            sideMenu.classList.remove("-right-[500px]");
+            sideMenu.classList.add("right-0");
+        } else {
+            sideMenuBackground.classList.add("hidden");
+            sideMenu.classList.remove("right-0");
+            sideMenu.classList.add("-right-[500px]");
+        }
+    });
+
+    sideMenuCross.addEventListener("click", handleCloseSideMenu);
+    sideMenuBackground.addEventListener("click", handleCloseSideMenu);
+</script>

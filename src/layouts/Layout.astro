@@ -4,6 +4,7 @@ import "@fontsource/fira-sans";
 import "@fontsource-variable/space-grotesk";
 import Navbar from "../components/layout/Navbar.astro";
 import Footer from "../components/layout/Footer.astro";
+import SideMenu from "../components/layout/SideMenu.astro";
 
 interface Props {
 	title: string;
@@ -24,7 +25,10 @@ const { title } = Astro.props;
 	</head>
 	<body class="bg-blue-800 mx-6 text-white">
 		<Navbar />
-		<slot />
+		<SideMenu />
+		<main class="min-h-screen">
+			<slot />
+		</main>
 		<Footer />
 	</body>
 </html>
